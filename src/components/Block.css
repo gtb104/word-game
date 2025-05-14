@@ -1,0 +1,12 @@
+.block {
+  background-color: antiquewhite;
+  box-sizing: border-box;
+  border: 1px solid wheat;
+  border-radius: 4px;
+  width: 80px;
+  height: 80px;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

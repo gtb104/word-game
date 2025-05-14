@@ -1,0 +1,12 @@
+.my-button {
+  background-color: grey;
+  color: white;
+}
+.my-button.primary {
+  background-color: steelblue;
+  color: white;
+}
+.my-button:disabled {
+  background-color: lightgrey;
+  color: white;
+}

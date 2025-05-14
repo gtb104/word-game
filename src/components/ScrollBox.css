@@ -1,0 +1,15 @@
+.scroll-box {
+  margin-right: 2px;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none;
+  width: 80px;
+}
+.scroll-box::-webkit-scrollbar {
+  display: none;
+}
+.scroll-box:first-child {
+  margin-left: 2px;
+}

@@ -1,0 +1,38 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+  background-color: aliceblue;
+}
+
+.main-container {
+  background-color: white;
+  width: 412px;
+  height: 736px;
+  display: flex;
+}
+
+.submit {
+  margin-bottom: 16px;
+}
+
+.spacer {
+  width: 80px;
+  height: 320px;
+  margin-bottom: 8px;
+}
+.spacer:last-child {
+  margin-bottom: 6px;
+}
+
+.block {
+  margin-bottom: 2px;
+  scroll-snap-align: center;
+}
+
+.selection-box {
+  position: relative;
+  top: -414px;
+  left: -4px;
+}

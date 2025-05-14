@@ -1,0 +1,7 @@
+.selection-box {
+  border: 4px solid steelblue;
+  border-radius: 8px;
+  width: 412px;
+  height: 84px;
+  pointer-events: none;
+}
