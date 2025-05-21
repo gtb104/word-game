@@ -6,7 +6,7 @@ interface BlockProps {
 }
 
 const Block = ({ char, onClick }: BlockProps) => {
-  return <div className="block" onClick={onClick}>{char.toUpperCase()}</div>;
+  return <div className="block" onClick={onClick}>{char}</div>;
 }
 
 export default Block;

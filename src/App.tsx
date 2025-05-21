@@ -96,7 +96,11 @@ const App = () => {
 
   return (
     <>
-      <p>Words found({foundWords.length} of {validWords.length}): {foundWords.join(", ").toUpperCase()}</p>
+      <p className="results">
+        Words found ({foundWords.length} of {validWords.length}):&nbsp;
+        <span title={foundWords.join(", ")}>{foundWords.join(", ")}</span>
+      </p>
+
       <Button className="submit" type="button" isPrimary onClick={checkSelectedCharacters}>Check Word</Button>
 
       <div className="main-container">

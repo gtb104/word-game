@@ -13,6 +13,17 @@
   display: flex;
 }
 
+.results {
+  width: 420px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.results span {
+  text-transform: capitalize;
+  width: 400px;
+}
+
 .submit {
   margin-bottom: 16px;
 }
