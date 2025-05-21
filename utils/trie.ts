@@ -1,6 +1,6 @@
 class TrieNode {
-  children;
-  isEndOfWord;
+  children: Record<string, TrieNode>;
+  isEndOfWord: boolean;
 
   constructor() {
     this.children = {};
@@ -9,13 +9,13 @@ class TrieNode {
 }
 
 class TrieRoot {
-  root;
+  root: TrieNode;
 
   constructor() {
     this.root = new TrieNode();
   }
 
-  insert(word) {
+  insert(word: string): void {
     let currentNode = this.root;
     for (const char of word) {
       if (!currentNode.children[char]) {
@@ -26,7 +26,7 @@ class TrieRoot {
     currentNode.isEndOfWord = true;
   }
 
-  search(word) {
+  search(word: string): boolean {
     let currentNode = this.root;
     for (const char of word) {
       if (!currentNode.children[char]) {
@@ -37,7 +37,7 @@ class TrieRoot {
     return currentNode.isEndOfWord;
   }
 
-  startsWith(prefix) {
+  startsWith(prefix: string): boolean {
     let currentNode = this.root;
     for (const char of prefix) {
       if (!currentNode.children[char]) {
@@ -50,11 +50,11 @@ class TrieRoot {
 }
 
 // Generate all possible words and check if they exist in the dictionary
-const findValidWords = (groups, trie) => {
-  const validWords = [];
+const findValidWords = (groups: string[][], trie: TrieRoot): string[] => {
+  const validWords: string[] = [];
 
   // Generate all combinations of 5 characters, one from each group
-  function generateCombinations(prefix, groupIndex) {
+  function generateCombinations(prefix: string, groupIndex: number): void {
     if (prefix.length === 5) {
       // Only check the word if the full prefix is valid
       if (trie.search(prefix)) {
@@ -79,7 +79,7 @@ const findValidWords = (groups, trie) => {
   return validWords;
 };
 
-const Trie = (wordlist, groups) => {
+const Trie = (wordlist: string[], groups: string[][]): string[] => {
   // Build a Trie from the word list
   const trie = new TrieRoot();
   wordlist.forEach((word) => trie.insert(word));

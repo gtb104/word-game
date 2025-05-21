@@ -10,7 +10,7 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src", "utils/bs.tsx", "utils/trie.js", "utils/wordlist.js"],
+  "include": ["src", "utils/bs.tsx", "utils/trie.ts", "utils/wordlist.js"],
   "files": [],
   "references": [
     { "path": "./tsconfig.app.json" },

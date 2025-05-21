@@ -2,7 +2,7 @@ import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
 import wordlist from "./utils/wordlist.js";
-import trie from "./utils/trie.js";
+import trie from "./utils/trie.ts";
 
 const app = express();
 const port = 3000;
