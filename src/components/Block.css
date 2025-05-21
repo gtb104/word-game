@@ -1,10 +1,13 @@
 .block {
-  background-color: antiquewhite;
+  background-color: #F0EDE8;
   box-sizing: border-box;
-  border: 1px solid wheat;
-  border-radius: 4px;
+  border: 1px solid #F0EDE8;
+  border-radius: 8px;
   width: 80px;
   height: 80px;
+  font-family: Fredoka, sans-serif;
+  font-weight: 500;
+  color: #8e7655;
   font-size: 3rem;
   display: flex;
   justify-content: center;

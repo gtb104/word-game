@@ -2,8 +2,8 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 2rem;
-  text-align: center;
   background-color: aliceblue;
+  font-family: Lexend, sans-serif;
 }
 
 .main-container {
@@ -26,6 +26,7 @@
 
 .submit {
   margin-bottom: 16px;
+  width: 100%;
 }
 
 .spacer {
